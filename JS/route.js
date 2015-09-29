@@ -9,6 +9,10 @@ marvellApp.config(['$routeProvider',
         templateUrl: 'Templates/characterDetail.html',
         controller: 'CharacterDetailCtrl'
       }).
+	  when('/characters:navigate', {
+        templateUrl: 'Templates/characterList.html',
+        controller: 'CharacterListCtrl'
+      }).
       otherwise({
         redirectTo: '/characters'
       });

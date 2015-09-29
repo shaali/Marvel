@@ -1,0 +1,1 @@
+var marvellApp = angular.module("marvellApp", ['ngRoute','marvellControllers']);

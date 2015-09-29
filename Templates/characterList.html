@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Characters</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Bio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="char in characters">
+                <td>{{char.name}}</td>
+                <td>{{char.description}}</td>
+                <td><a href="#/characters/{{char.id}}">View</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
